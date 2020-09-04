@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Link } from 'react-scroll';
+import { Link, animateScroll } from 'react-scroll';
 import { useTheme, makeStyles, Tabs, Tab } from '@material-ui/core';
 import { HeaderProps } from './Header';
 
@@ -64,7 +64,6 @@ export const HeaderTabs: FunctionComponent<HeaderTabsProps> = ({
         spy
         hashSpy
         smooth
-        duration={400}
         offset={-100}
         onClick={onClickTab}
       />
@@ -79,7 +78,6 @@ export const HeaderTabs: FunctionComponent<HeaderTabsProps> = ({
         spy
         hashSpy
         smooth
-        duration={400}
         offset={-70}
         onClick={onClickTab}
       />
@@ -94,7 +92,6 @@ export const HeaderTabs: FunctionComponent<HeaderTabsProps> = ({
         spy
         hashSpy
         smooth
-        duration={400}
         offset={-70}
         onClick={onClickTab}
       />
@@ -109,7 +106,6 @@ export const HeaderTabs: FunctionComponent<HeaderTabsProps> = ({
         spy
         hashSpy
         smooth
-        duration={400}
         offset={-70}
         onClick={onClickTab}
       />
@@ -124,9 +120,13 @@ export const HeaderTabs: FunctionComponent<HeaderTabsProps> = ({
         spy
         hashSpy
         smooth
-        duration={400}
-        offset={-70}
-        onClick={onClickTab}
+        offset={-700}
+        onClick={() => {
+          if (onClickTab) {
+            onClickTab();
+          }
+          animateScroll.scrollToBottom();
+        }}
        />
     </Tabs>
   );
