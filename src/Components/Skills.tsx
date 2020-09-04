@@ -11,6 +11,9 @@ const useStyles = makeStyles({
   header: {
     textAlign: 'center',
   },
+  h4: {
+    margin: '1em 0',
+  },
   langsandtools: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -79,11 +82,15 @@ export const Skills = () => {
             variant='h4'
             align='left'
             color='primary'
+            classes={{
+              h4: classes.h4,
+            }}
           >
             Programming / Scripting Languages
           </Typography>
-          {progLangs.map(lang =>
+          {progLangs.map((lang, index) =>
             <Typography
+              key={index}
               variant='h6'
               gutterBottom
             >
@@ -96,11 +103,15 @@ export const Skills = () => {
             variant='h4'
             align='left'
             color='primary'
+            classes={{
+              h4: classes.h4
+            }}
           >
             Tools
           </Typography>
-          {tools.map(tool =>
+          {tools.map((tool, index) =>
             <Typography
+              key={index}
               variant='h6'
               gutterBottom
             >

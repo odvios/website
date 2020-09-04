@@ -58,6 +58,7 @@ export const AboutMe = () => {
           }}
         >
           Hello and welcome to my website! My name is Abeer Ahmed, and I'm a software engineer.
+          I've done a lot of backend OOP work using Java, but lately I've gotten more into frontend work using React and TypeScript.
           I currently live and work near Philadelphia, PA, but I'm originally from New York State.
           When I'm not writing code, I enjoy learning new languages (currently French and a little German), practicing
           Historical European Martial Arts (HEMA), and playing tabletop rpgs and video games.

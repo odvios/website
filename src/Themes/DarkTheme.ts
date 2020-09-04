@@ -6,14 +6,11 @@ export const DarkTheme = createMuiTheme({
     h1: {
       margin: '.25em 0',
     },
-    h4: {
-      margin: '1em 0',
-    },
   },
   palette: {
     type: 'dark',
     primary: {
-      main: blue['A700'],
+      main: blue['A200'],
     },
     neutral: {
       main: blue['100']

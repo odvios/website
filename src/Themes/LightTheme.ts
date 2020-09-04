@@ -6,9 +6,6 @@ export const LightTheme = createMuiTheme({
     h1: {
       margin: '.25em 0',
     },
-    h4: {
-      margin: '1em 0',
-    },
   },
   palette: {
     primary: {
