@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme, makeStyles, Grid, Typography, Divider } from '@material-ui/core';
 import { ProjectCard } from './ProjectCard';
+import pdfSplicer from '../../Images/pdf_splicer.png';
  
 const useStyles = makeStyles(theme => ({
   projects: {
@@ -39,7 +40,7 @@ export const Projects = () => {
       >
         <Grid item xs={12} sm={12} md={12}>
           <ProjectCard
-            image='https://i.imgur.com/LeYqvlE.png'
+            image={pdfSplicer}
             title='PDF-Splicer'
             description={
               `PDF-Splicer is a Java application that can combine pages from multiple existing pdfs to create a new one.
@@ -55,7 +56,3 @@ export const Projects = () => {
     </div>
   );
 }
-
-// https://i.imgur.com/LeYqvlE.png
-// https://i.imgur.com/nSlNacJ.png
-// https://i.imgur.com/0bh6PJo.png

@@ -1,12 +1,13 @@
 import React from 'react';
 import { makeStyles, Typography, Divider } from '@material-ui/core';
+import profilePic from '../Images/profile_pic.jpg';
 
 const useStyles = makeStyles({
   aboutme: {
     maxWidth: '1200px',
     padding: '1em',
     margin: 'auto',
-    minHeight: '100vh',
+    minHeight: '50vh',
   },
   header: {
     textAlign: 'center',
@@ -17,7 +18,9 @@ const useStyles = makeStyles({
   },
   img: {
     flex: '0 0 auto',
-    margin: '2.5em',
+    marginTop: '2.5em',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     maxWidth: '200px',
     maxHeight: '200px',
     width: 'auto',
@@ -27,7 +30,7 @@ const useStyles = makeStyles({
   description: {
     flex: '1 1 auto',
     marginTop: '1.5em',
-    maxWidth: '950px',
+    maxWidth: '900px',
   },
 });
  
@@ -48,7 +51,7 @@ export const AboutMe = () => {
       <div className={classes.bio}>
         <img
           className={classes.img}
-          src='https://i.imgur.com/An13jso.jpg'
+          src={profilePic}
           alt=''
         />
         <Typography

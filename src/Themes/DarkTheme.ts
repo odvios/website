@@ -10,7 +10,7 @@ export const DarkTheme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: blue['A200'],
+      main: blue['A400'],
     },
     neutral: {
       main: blue['100']

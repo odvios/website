@@ -10,6 +10,7 @@ import { Contact } from './Contact/Contact';
 const useStyles = makeStyles(theme => ({
   main: {
     minHeight: '100vh',
+    overflowX: 'hidden',
     boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'column',
@@ -27,6 +28,10 @@ const useStyles = makeStyles(theme => ({
   offSection: {
     padding: '1em 0 2em 0',
     backgroundColor: theme.palette.secondary.main,
+  },
+
+  endSection: {
+    paddingTop: '1em'
   },
 }));
 
@@ -65,7 +70,7 @@ export const Main: FunctionComponent<MainProps> = ({
           <div className={classes.offSection} id='projects'>
             <Projects/>
           </div>
-          <div className={classes.section} id='contact'>
+          <div className={classes.endSection} id='contact'>
             <Contact/>
           </div>
         </div>
